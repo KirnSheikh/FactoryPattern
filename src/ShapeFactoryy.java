@@ -5,7 +5,7 @@ public class ShapeFactoryy {
 		if(type.toUpperCase().equals("circle")){
 			return new Circlee();
 		}
-		else if(type.toUpperCase().equals("RECTANGLE")){
+		else if(type.toUpperCase().equals("rectangle")){
 			return new Rectanglee();
 		}
 		else
