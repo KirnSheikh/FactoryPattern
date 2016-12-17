@@ -17,7 +17,7 @@ public class FactoryDemoo {
 	    shell.setSize(400, 400);
 	    shell.setText("Factory Pattern");
 	    shell.setLayout(new RowLayout());
-	    ShapeFactoryy shapeFactory = new ShapeFactoryy();
+	    ShapeFactory shapeFactory = new ShapeFactory();
 	    final Button buttonRect = new Button(shell, SWT.PUSH);
 	    buttonRect.setText("Draw Rectangle");
 	    
@@ -32,7 +32,7 @@ public class FactoryDemoo {
 		    shell.setLayout(new RowLayout());
 			  switch (event.type) {
 		        case SWT.Selection:
-		        	ShapeFactoryy shapeFactory = new ShapeFactoryy();
+		        	ShapeFactory shapeFactory = new ShapeFactory();
 		        	Shapee sh = shapeFactory.createShape("rectangle");
 			    	  sh.draw(shell, 10, 60, 100,100);
 		          break;
@@ -54,7 +54,7 @@ public class FactoryDemoo {
 				  switch (event.type) {
 				  
 			        case SWT.Selection:
-			        	ShapeFactoryy shapeFactory = new ShapeFactoryy();
+			        	ShapeFactory shapeFactory = new ShapeFactory();
 			        	Shapee sh = shapeFactory.createShape("circle");
 				    	  sh.draw(shell, 120, 60, 100,100);
 			          break;
